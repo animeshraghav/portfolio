@@ -22,17 +22,15 @@ export const HeroBg = styled.div`
   position: absolute;
   display: flex;
   justify-content: end;
-  top: 0;
+  top: 50%;
   right: 0;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 52%;
+  width: 80%;
   height: 100%;
   max-width: 1360px;
   overflow: hidden;
   padding: 0 30px;
-  top: 50%;
-  left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 
@@ -50,24 +48,24 @@ export const HeroInnerContainer = styled.div`
   width: 100%;
   max-width: 1100px;
 
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     flex-direction: column;
   }
 `;
 export const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,24 +78,29 @@ export const HeroRightContainer = styled.div`
   order: 2;
   justify-content: end;
   gap: 12px;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     order: 1;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
   }
 
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
+    order: 1;
     margin-bottom: 30px;
   }
 `;
 
 export const Img = styled.img`
   position: relative;
-  width: 100%;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  left: 0%;
+  width: 65%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 350px;
+  max-height: 380px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
 
@@ -117,11 +120,11 @@ export const Title = styled.div`
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     text-align: center;
   }
 
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
@@ -135,10 +138,10 @@ export const TextLoop = styled.div`
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     text-align: center;
   }
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     font-size: 22px;
     line-height: 48px;
     margin-bottom: 16px;
