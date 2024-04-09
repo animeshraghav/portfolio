@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import _default from "../../themes/default";
+// import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -93,11 +93,11 @@ export const HeroRightContainer = styled.div`
 
 export const Img = styled.img`
   position: relative;
-  top: 5%;
-  right: 0;
-  bottom: 0;
-  left: 0%;
-  width: 65%;
+  top: -10%;
+  right: 75%;
+  bottom: 75%;
+  left: -13%;
+  width: 60%;
   height: 100%;
   max-width: 350px;
   max-height: 380px;
@@ -183,7 +183,7 @@ export const ResumeButton = styled.a`
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
+    transition: all 0.5s ease-in-out !important;
     background: hsla(271, 100%, 50%, 1);
     background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
@@ -191,7 +191,7 @@ export const ResumeButton = styled.a`
     box-shadow:  20px 20px 60px #1F2634,
     -20px -20px 60px #1F2634;
     &:hover {
-        transform: scale(1.05);
+        transform: scale(2.05);
     transition: all 0.4s ease-in-out;
     box-shadow:  20px 20px 60px #1F2634,
     filter: brightness(1);

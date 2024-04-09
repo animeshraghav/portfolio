@@ -14,6 +14,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import {Helmet} from "react-helmet";
 
 
 const Body = styled.div`
@@ -33,6 +34,12 @@ function App() {
   console.log(openModal)
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Animesh Raghav</title>
+      <link rel="canonical" href="http://mysite.com/example" />
+      <meta name="description" content="Animesh Raghav Portfolio" />
+    </Helmet>
       <Router >
         <Navbar />
         <Body>
