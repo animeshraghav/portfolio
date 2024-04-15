@@ -1,6 +1,8 @@
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
-import _default from '../../themes/default';
+// import { FaBars } from 'react-icons/fa';
+
+// import _default from '../../themes/default';
 
 export const Nav = styled.div`
     background-color: ${({theme}) => theme.card_light};
@@ -25,6 +27,8 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
+  filter: ${({ isBlurred }) => (isBlurred ? 'blur(5px)' : 'none')}; /* Apply blur effect conditionally */
+  transition: filter 0.3s ease-in-out; /* Add transition for smoother effect */
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -86,7 +90,7 @@ export const GitHubButton = styled.a`
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.4s ease-in-out;
     :hover {
       background: ${({ theme }) => theme.primary};
       color: ${({ theme }) => theme.white};     
@@ -206,7 +210,7 @@ export  const MobileLink = styled.a`
 `;
 
 export const MobileNavLogo = styled(LinkR)`
-  width: 80%;
+  width: 60%;
   padding: 0 6px;
   display: flex;
   justify-content: start;

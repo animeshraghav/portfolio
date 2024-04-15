@@ -2,15 +2,16 @@ export const Bio = {
     name: "Animesh Raghav",
     roles: [
       "Full Stack Developer",
-      "Android Developer",
+      "Java Developer",
+      "Python Developer",
       "UI/UX Designer",
-      "Programmer",
+      // "Programmer",
     ],
     description:
       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/animeshraghav",
-    resume: "https://drive.google.com/file/d/1NUXSeDSv3jKlSSVshJhC0yrDWzp9QmRl/view?usp=sharing",
-    linkedin: "www.linkedin.com/in/animesh-raghav",
+    resume: "https://drive.google.com/file/d/1l1qbb7g1YrDooOgvd3j1HpVutrzze9Jd/view?usp=drive_link",
+    linkedin: "https://www.linkedin.com/in/animesh-raghav/",
     // twitter: 
     insta: "https://www.instagram.com/animesh_raghav/",
     // facebook: 
@@ -232,9 +233,9 @@ export const Bio = {
       img: "/images/vit.jpg",
       school: "Vellore Institute of Technology, Bhopal",
       date: "Oct 2020 - Sep 2025",
-      grade: "8.45 CGPA",
+      grade: "8.68 CGPA",
       desc: "I am currently pursuing Integrated Master's degree in Artificial Intelligence and Machine Learning at VIT, Bhopal . I have completed 8 semesters and have a CGPA of 8.45. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Photography club at VIT, where I am learning and working with the talented team to showcase the photography skills in vision to promote university",
-      degree: "Integrated Masters of Technology - Int. M.Tech (Artificial Intelligence and Machine Learning)",
+      degree: "Integrated Masters of Technology with specialization in (Artificial Intelligence and Machine Learning)",
     },
     {
       id: 1,
@@ -376,10 +377,10 @@ export const Bio = {
     },
   ];
   
-  export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
-  ];
+  // export const TimeLineData = [
+  //   { year: 2017, text: "Started my journey" },
+  //   { year: 2018, text: "Worked as a freelance developer" },
+  //   { year: 2019, text: "Founded JavaScript Mastery" },
+  //   { year: 2020, text: "Shared my projects with the world" },
+  //   { year: 2021, text: "Started my own platform" },
+  // ];

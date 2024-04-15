@@ -13,6 +13,7 @@ justify-content: center;
 position: relative;
 z-index: 1;
 align-items: center;
+padding: 60px 0px 80px 0px;
 @media (max-width: 960px) {
     padding: 0px;
 }
@@ -109,17 +110,31 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out !important;
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
   background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
   background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  padding: 13px 16px;
+  padding: 13px 0px;
   margin-top: 2px;
   border-radius: 12px;
   border: none;
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  &:hover {
+      transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+  box-shadow:  20px 20px 60px #1F2634,
+  filter: brightness(1);
+  }    
+
+
+  @media (max-width: 640px) {
+      padding: 13px 0;
+      font-size: 18px;
+    } 
 `
 
 
@@ -132,7 +147,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
+    emailjs.sendForm('service_p0yu5ue', 'template_5pcocsa', form.current, 'yP4D3U6f0F4Pou2Jt')
       .then((result) => {
         setOpen(true);
         form.current.reset();
@@ -142,9 +157,9 @@ const Contact = () => {
   }
 
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
-        <Title>Contact</Title>
+        <Title>Contact Me</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me <img width="40px" margin="0px"src={rocket} alt="rocket gif"/></ContactTitle>
@@ -166,4 +181,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

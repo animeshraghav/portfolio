@@ -96,6 +96,7 @@ function Footer() {
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#contact">Contact</NavLink> 
         </Nav>
         <SocialMediaIcons>
           {/* <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
@@ -105,9 +106,8 @@ function Footer() {
           <SocialMediaIcon href={Bio.github} target="display"><GitHubIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Animesh Raghav. All rights reserved.
+          &copy; 2024 Animesh Raghav. All rights reserved.
         </Copyright>
-
       </FooterWrapper>
     </FooterContainer>
   );

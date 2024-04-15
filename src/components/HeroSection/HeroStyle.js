@@ -191,8 +191,8 @@ export const ResumeButton = styled.a`
     box-shadow:  20px 20px 60px #1F2634,
     -20px -20px 60px #1F2634;
     &:hover {
-        transform: scale(2.05);
-    transition: all 0.4s ease-in-out;
+        transform: scale(1.05);
+    transition: all 0.25s ease-in-out;
     box-shadow:  20px 20px 60px #1F2634,
     filter: brightness(1);
     }    
@@ -200,7 +200,7 @@ export const ResumeButton = styled.a`
     
     @media (max-width: 640px) {
         padding: 12px 0;
-        font-size: 18px;
+        font-size: 20px;
     } 
 
 `;
